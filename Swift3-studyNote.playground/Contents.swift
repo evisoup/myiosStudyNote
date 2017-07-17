@@ -115,39 +115,8 @@ a10.sorted(by: > )
 
 
 
+// initialize array with default values - used in tictactoe thalmic grid lol
+var intArray = [Int](repeating: 0, count: 5)
 
-
-let numbers = [ [10, 20, 30],
-                [40, 50, 60],
-                [70, 80, 90]]
-
-numbers[1][2] //row & col
-
-var intArray = [Int](repeating: 0, count: 2)
-
-//used in grid
-enum Mark {
-    case cross
-    case nought
-    case empty
-}
-
-// game result for playerA
-enum Result {
-    case win,lose,draw
-    case ongoing
-}
-
-enum Player {
-    case playerA
-    case playerB
-}
-var arr: [[Mark]] = Array(repeating: Array(repeating: .empty, count: 2), count: 3)
-
-print(arr)
-
-var currentPlayer = Player.playerB
-
-currentPlayer = currentPlayer == .playerA ? .playerB : .playerA
 
 
